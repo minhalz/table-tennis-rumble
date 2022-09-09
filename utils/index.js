@@ -3,8 +3,9 @@ import rules from '@/content/rules'
 let voice
 if (process.client) {
     window.speechSynthesis.onvoiceschanged = function () {
-        const voices = window.speechSynthesis.getVoices()
-        voice = voices[2]
+        voice = speechSynthesis.getVoices().filter(function (voice) {
+            return voice.lang === 'en-US'
+        })[0]
     }
 }
 
