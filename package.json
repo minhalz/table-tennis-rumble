@@ -5,7 +5,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "upgrade": "nuxt upgrade"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.1",
@@ -24,7 +25,7 @@
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^8.2.0",
-    "nuxt": "3.0.0-rc.8",
+    "nuxt": "^3.0.0-rc.9",
     "prettier": "^2.5.1",
     "sass": "^1.54.8",
     "sass-loader": "^10.3.1",

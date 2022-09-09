@@ -1,9 +1,11 @@
 import rules from '@/content/rules'
 
 let voice
-window.speechSynthesis.onvoiceschanged = function () {
-    const voices = window.speechSynthesis.getVoices()
-    voice = voices[2]
+if (process.client) {
+    window.speechSynthesis.onvoiceschanged = function () {
+        const voices = window.speechSynthesis.getVoices()
+        voice = voices[2]
+    }
 }
 
 export function getRandomNumber(min, max) {

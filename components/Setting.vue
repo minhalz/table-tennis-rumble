@@ -1,6 +1,12 @@
 <script setup>
 defineEmits(['update:modelValue'])
-const { modelValue, label, min, max } = defineProps(['modelValue', 'label', 'min', 'max'])
+const { modelValue, modelModifiers, label, min, max } = defineProps([
+    'modelValue',
+    'modelModifiers',
+    'label',
+    'min',
+    'max',
+])
 </script>
 <template>
     <div>
@@ -15,6 +21,6 @@ const { modelValue, label, min, max } = defineProps(['modelValue', 'label', 'min
             @input="$emit('update:modelValue', $event.target.value)"
             @change="$emit('update:modelValue', $event.target.value)"
         />
-        {{ modelValue }}
+        <span>{{ modelValue }}</span>
     </div>
 </template>

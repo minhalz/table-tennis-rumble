@@ -3,7 +3,6 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
     // Target: https://go.nuxtjs.dev/config-target
     target: 'static',
-    ssr: false,
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     meta: {
