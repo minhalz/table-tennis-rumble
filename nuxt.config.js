@@ -53,7 +53,6 @@ export default defineNuxtConfig({
                 wght: [300 + '..' + 800],
             },
         },
-        subsets: 'latin',
-        preload: true,
+        overwriting: true,
     },
 })
